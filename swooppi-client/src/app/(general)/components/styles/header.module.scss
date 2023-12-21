@@ -1,0 +1,93 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .75rem 6rem;
+    border-bottom: 1px solid #F0F1F3;
+    background: #FFF;
+
+    .left {
+        display: flex;
+        align-items: center;
+
+        img {
+            margin: 0rem 2rem;
+        }
+
+        .dropdown {
+            display: flex;
+            align-items: center;
+            padding: .5rem .75rem;
+            border-radius: 8px;
+            margin-right: 32px;
+
+            border: 1px solid #D9DCE2;
+            box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+            color: #667085;
+            font-family: var(--font-montserrat);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 175%;
+
+            svg {
+                margin-right: 8px;
+            }
+        }
+
+        .search {
+            display: flex;
+            align-items: center;
+            padding: .5rem .75rem;
+            width: 360px;
+            border: 1px solid #D9DCE2;
+            box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+            border-radius: 8px;
+
+            input {
+                flex-grow: 1;
+                height: 90%;
+                border: none;
+                outline: none;
+                color: #667085;
+                font-family: var(--font-montserrat);
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 175%;
+            }
+
+            svg {
+                margin-right: 8px;
+            }
+        }
+    }
+
+    .right {
+        padding: .625rem 1rem;
+        border-radius: 360px;
+        border: 1px solid #6741FF;
+        background: #6741FF;
+
+        box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+
+        .dropdownComponent {
+            .hamburger {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                p {
+                    margin: 0rem .5rem;
+                    color: #FFF;
+                    font-family: var(--font-montserrat);
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 150%;
+
+                }
+            }
+        }
+    }
+}

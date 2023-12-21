@@ -1,0 +1,30 @@
+.dropdownComponent {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    height: 100%;
+
+    .SelectTrigger {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        line-height: 1;
+        height: 100%;
+        width: 100%;
+        gap: .625rem;
+        background: transparent;
+        font-family: inherit;
+        color: inherit;
+        font-size: inherit;
+        font-weight: inherit;
+        line-height: inherit;
+    }
+
+    .SelectTrigger[data-placeholder] {
+        color: #828282;
+    }
+
+    .SelectTrigger[data-selected] {
+        color: #828282;
+    }
+}
