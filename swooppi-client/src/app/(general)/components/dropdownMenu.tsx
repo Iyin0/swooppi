@@ -32,7 +32,7 @@ const DropdownMenuComponent: React.FunctionComponent<DropdownMenuComponentProps>
                     <DropdownMenu.Group className={styles.DropdownGroup}>
                         {routes.map((item, index) => (
                             <DropdownMenu.Item asChild key={index}>
-                                <Link href={item.link}>{item.title}</Link>
+                                <Link href={item.link}><p>{item.title}</p> <span>10</span></Link>
                             </DropdownMenu.Item>
                         ))}
                     </DropdownMenu.Group>

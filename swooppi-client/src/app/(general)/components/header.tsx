@@ -20,47 +20,30 @@ const Header: React.FunctionComponent<HeaderProps> = () => {
 
     const routes: RoutesType = [
         {
-            title: 'Home',
+            title: 'Most Popular',
             link: '/',
         },
         {
-            title: 'How It Works',
-            link: '/#how-it-works',
+            title: 'Mains',
+            link: '/',
         },
         {
-            title: 'FAQs',
-            link: '/#faq',
+            title: 'Family Value',
+            link: '/',
         },
         {
-            title: 'Contact',
-            link: `#contact`,
+            title: 'Drinks',
+            link: `/`,
         },
         {
-            title: 'Privacy Policy',
-            link: '/privacy',
-        },
-        {
-            title: 'Terms and Conditions',
-            link: '/terms',
-        },
-        {
-            title: 'Blog',
-            link: '#',
-        },
-        {
-            title: 'Login',
-            link: '/login',
-        },
+            title: 'Drinks',
+            link: '/',
+        }
     ]
     return (
         <header className={styles.header}>
             <div className={styles.left}>
-                {/* <button>
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M3 12H15M3 6H21M3 18H21" stroke="#48505E" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                    </svg>
-                </button> */}
-                <DropdownMenuComponent routes={[]} />
+                <DropdownMenuComponent routes={routes} />
 
                 <Image src={logo} alt='logo' width={60} height={40} />
                 <div className={styles.dropdown}>

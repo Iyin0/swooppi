@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Montserrat } from 'next/font/google'
 import './globals.scss'
+import { Analytics } from '@vercel/analytics/react';
 
 export const metadata: Metadata = {
   title: 'Swooppi',
@@ -20,7 +21,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${montserrat.variable}`}>{children}</body>
+      <body className={`${montserrat.variable}`}>
+        {children}
+        <Analytics />
+      </body>
     </html>
   )
 }
